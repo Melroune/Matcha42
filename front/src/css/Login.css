@@ -1,0 +1,76 @@
+.auth
+{
+  min-width: 40vw;
+	max-width: 55vw;
+	margin-left: 10%;
+	margin-right: auto;
+	/*width: 80%;*/
+	background-color: rgba(255, 255, 255, 0.8);
+	min-width: inherit;
+	margin-top: 10%;
+	/*box-shadow: 0px 0px 2px;*/
+	/*border-radius: 2px;*/
+	text-align: center;
+	/*height: 50vh;*/
+}
+.content
+{
+	height: inherit;
+	text-decoration: none;
+	color: black;
+}
+.log-in-form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/*box-sizing: border-box;*/
+	margin: auto;
+	height: inherit;
+	/*animation-name: loginfade;*/
+	/*animation-duration: 3s;*/
+	opacity: 1;
+}
+.log-in-form input{
+	margin: 2px;
+	width: 90%;
+	height: 4vh;
+
+	/*border-radius: 5px;*/
+	font-size: 1em;
+	/*text-align: center;*/
+}
+.comLog
+{
+	color: PaleVioletRed;
+	font-size: 1.5em;
+	font-style: italic;
+	font-weight: 900;
+}
+.buttons-login
+{
+    align-self: center;
+}
+.buttonLog {
+    background-color: #07E116; /* #00E50F */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+		min-width: 90%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px 1.5em;
+    cursor: pointer;
+		font-weight: bold;
+}
+.entetLog
+{
+	color: #959090 ;
+	margin: 21px 0px 3px 0px;
+	margin-left: 5%;
+	align-self: flex-start;
+	font-style: italic;
+	font-weight: 900;
+}
