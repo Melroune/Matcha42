@@ -2,7 +2,32 @@
 	min-width: 40vw;
 	max-width: 55vw;
 }*/
+/*---------Logo & sub ---------*/
+.logo{
+	margin-left: 5%;
+	margin-right: auto;
+	text-align: center;
+}
+		.logoLog{
+				min-width: 25vw;
+				max-width: 25vw;
+				margin-right: auto;
+		}
+		.p, .logoSub{
+			font-size: 2em;
+			color: 	PaleVioletRed;
+			font-style: italic;
+			font-weight: 900;
+			margin: 0.3em 0 -0.7em;
+		}
+.logoSub1{
+	color: 	#424242;
+	font-style: italic;
+	font-weight: 300;
 
+}
+/*---------Fin logo & sub---------*/
+/*--------- Authentification ---------*/
 .auth
 {
   /*min-width: 40vw;*/
@@ -18,117 +43,87 @@
 	text-align: center;
 	padding: 0 0 1px;
 }
-.content
-{
-	height: inherit;
-	text-decoration: none;
-	color: black;
-}
-.logo{
-	/*min-width: 35vw;
-	max-width: 35vw;*/
-	margin-left: 5%;
-	margin-right: auto;
-	/*margin-left: 5%;*/
-	/*margin-right: auto;*/
-	text-align: center;
-}
-.logoLog{
-  /*width: 20%;
-	height: 20%;*/
-	min-width: 25vw;
-	max-width: 25vw;
-	/*margin-left: %;*/
-	margin-right: auto;
-}
-.p, .logoSub{
-	font-size: 2em;
-	color: 	PaleVioletRed;
-	font-style: italic;
-	font-weight: 900;
-	margin: 0.3em 0 -0.7em;
-}
-.logoSub1{
-	/*font-size: 2em;*/
-	color: 	#424242;
-	font-style: italic;
-	font-weight: 300;
+		.content
+		{
+			height: inherit;
+			text-decoration: none;
+			color: black;
+		}
 
-}
-.log-in-form{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	/*box-sizing: border-box;*/
-	margin: auto;
-	height: inherit;
-	/*animation-name: loginfade;*/
-	/*animation-duration: 3s;*/
-	opacity: 1;
-}
-.entetLog
-{
-	color: #959090 ;
-	margin: 21px 0px 3px 0px;
-	margin-left: 5%;
-	align-self: flex-start;
-	font-style: italic;
-	font-weight: 900;
-}
+				.log-in-form{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					/*box-sizing: border-box;*/
+					margin: auto;
+					height: inherit;
+					/*animation-name: loginfade;*/
+					/*animation-duration: 3s;*/
+					opacity: 1;
+				}
+						.comLog
+						{
+							color: PaleVioletRed;
+							font-size: 1.5em;
+							font-style: italic;
+							font-weight: 900;
+						}
+						.entetLog
+						{
+							color: #959090 ;
+							margin: 21px 0px 3px 0px;
+							margin-left: 5%;
+							align-self: flex-start;
+							font-style: italic;
+							font-weight: 900;
+						}
 
-.log-in-form input{
-	margin: 2px;
-	width: 90%;
-	height: 4vh;
+						.log-in-form input{
+							margin: 2px;
+							width: 90%;
+							height: 4vh;
 
-	/*border-radius: 5px;*/
-	font-size: 1em;
-	/*text-align: center;*/
-}
-.comLog
-{
-	color: PaleVioletRed;
-	font-size: 1.5em;
-	font-style: italic;
-	font-weight: 900;
-}
-.mdpOublier{
-	display: flex;
-	justify-content: flex-end;
-	margin: 0.7em 5%;
-}
-.mdpOublier1{
-	color: #959090 ;
-	align-self: flex-start;
-	font-style: italic;
-	font-weight: 900;
-}
-.buttons-login
-{
-    align-self: center;
-}
-.buttonLog {
-    background-color: #07E116; /* #00E50F */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-		min-width: 90%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 3px 2px 10px;
-    cursor: pointer;
-		font-weight: bold;
-}
-.buttons-sign
-{
-	margin: 0 0 1.5em;
-}
-.sign, .sign-in{
-	color: #959090 ;
-	align-self: flex-start;
-	font-style: italic;
-	font-weight: 900;
-}
+							/*border-radius: 5px;*/
+							font-size: 1em;
+							/*text-align: center;*/
+						}
+			.buttons-login
+			{
+			    align-self: center;
+			}
+					.mdpOublier{
+						display: flex;
+						justify-content: flex-end;
+						margin: 0.7em 5%;
+					}
+					.mdpOublier1{
+						color: #959090 ;
+						align-self: flex-start;
+						font-style: italic;
+						font-weight: 900;
+					}
+					.buttonLog {
+					    background-color: #07E116; /* #00E50F */
+					    border: none;
+					    color: white;
+					    padding: 15px 32px;
+							min-width: 90%;
+					    text-align: center;
+					    text-decoration: none;
+					    display: inline-block;
+					    font-size: 16px;
+					    margin: 3px 2px 10px;
+					    cursor: pointer;
+							font-weight: bold;
+					}
+					.buttons-sign
+					{
+						margin: 0 0 1.5em;
+					}
+							.sign, .sign-in{
+								color: #959090 ;
+								align-self: flex-start;
+								font-style: italic;
+								font-weight: 900;
+							}

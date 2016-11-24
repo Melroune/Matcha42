@@ -1,5 +1,8 @@
 import React from 'react';
+import {Link}	from 'react-router';
 // import logo from './logo.svg';
+
+// import Login from './login';
 import './css/Header.css';
 // const divStyle = {
 //
@@ -13,7 +16,7 @@ export default class Header extends React.Component {
     return (
       <div className="header">
 
-          <button className="button button1">inscription</button>
+          	<Link  className="login" to="/login"><button className="button button1">inscription</button></Link>
       </div>
     );
   }

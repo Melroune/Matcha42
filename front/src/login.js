@@ -1,12 +1,11 @@
 import React 	from 'react';
-import {Link}	from 'react-router';
+import {router, Link, Redirect, replace}	from 'react-router';
+
+// import Signin from './Signin';
 import './css/Login.css';
 
-export default class Login extends React.Component{
-
-	render() {
-		return(
-			<div className="globApp">
+const element = (
+	<div className="globApp">
 			<div className="logo"><img src="logo.png" alt="logo celiparents" className="logoLog"/>
 			<p className="logoSub">#<span className="logoSub1">EnlargeYourFamily</span></p>
 			</div>
@@ -17,9 +16,9 @@ export default class Login extends React.Component{
 											Unissez vos familles
 									</p>
 									<span className="entetLog"> Adresse email </span>
-									<input type="email" className="Username" title="Username" autoComplete="off" min="5" max="30" placeholder="Ex: jhon@gmail.com"size="60"></input>
+									<input type="email" className="Username" title="Username" autoComplete="off" min="5" max="30" placeholder=" Ex: jhon@gmail.com"size="60"></input>
 									<span className="entetLog"> Mot de passe </span>
-									<input type="password" className="password" title="password" autoComplete="off" min="8" max="30" placeholder="Password"></input>
+									<input type="password" className="password" title="password" autoComplete="off" min="8" max="30" placeholder=" Password"></input>
 							</form>
 							<div className="buttons-login">
 							<span className="mdpOublier"> <Link  className="mdpOublier1" to="/Signin">Mot de passe oublié ?</Link></span>
@@ -33,6 +32,21 @@ export default class Login extends React.Component{
 
 			</div>
 		</div>
+	);
+export default class Login extends React.Component{
+
+/*	state = {
+		ace : 0
+	}
+	componentDidMount = () => {
+		console.log(this.state.ace);
+		if(this.state.ace === 0){
+			window.location.href = 'Signin'
+		}
+	}*/
+	render() {
+		return(
+			element
 		);
 	}
 }
