@@ -1,35 +1,48 @@
 import React from 'react';
+
 import ReactDOM from 'react-dom';
-import { Router, Route, browserHistory , IndexRoute, Redirect} from 'react-router'
+import { Router, Route, browserHistory , IndexRoute} from 'react-router'
 
 import App from './App';
-import Login from './login';
-import Signin from './Signin';
-import './css/index.css';
+import Login from './auth/login';
+import Signin from './auth/Signin';
+import ForgotPassword from './auth/Forgot_password'
+import ErrorGlob from './error';
+
+import './index.css';
 
 const validate = (nextState, replace, callback) => {
   let connexion = "y";
-  if(connexion != "y")
+  // const { store } = this.props;
+  // const { getState, dispatch } = store;
+  if(connexion !==   "y")
   {
-    browserHistory.push('/Signin');
+      browserHistory.push('/auth/Signin');
+      // replace('/Signin');
   }else {
-    browserHistory.push('/login')
+      // browserHistory.push('/login');
+      // callback();
+      console.log('test');
+      // console.log(store);
   }
+
 }
 // <IndexRoute component={true? Signin:Login}/>
 
-const element = (
+const routeGlob = (
 
   <Router history={browserHistory}>
     <Route path="/" component={App}>
-        <IndexRoute component={Login} onReader={validate()}/>
-            <Route path="/login" component={Login}></Route>
-            <Route path="/Signin" component={Signin}></Route>
+        <IndexRoute component={Login} />
+            <Route path="/login" component={Login} onReader={validate()} />
+            <Route path="/Signin" component={Signin} />
+            <Route path="/Forgot_password" component={ForgotPassword} />
     </Route>
+    <Route path="*" component={ErrorGlob} />
   </Router>
 
 );
 
 ReactDOM.render((
-element
-  ), document.getElementById('root'));
+  routeGlob
+), document.getElementById('root'));

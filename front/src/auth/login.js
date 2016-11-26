@@ -1,12 +1,12 @@
 import React 	from 'react';
-import {router, Link, Redirect, replace}	from 'react-router';
+import {Link ,IndexLink}	from 'react-router';
 
 // import Signin from './Signin';
 import './css/Login.css';
 
 const element = (
 	<div className="globApp">
-			<div className="logo"><img src="logo.png" alt="logo celiparents" className="logoLog"/>
+			<div className="logo"><IndexLink to="/"><img src="logo.png" alt="logo celiparents" className="logoLog"/></IndexLink>
 			<p className="logoSub">#<span className="logoSub1">EnlargeYourFamily</span></p>
 			</div>
 			<div className="auth">
@@ -21,7 +21,7 @@ const element = (
 									<input type="password" className="password" title="password" autoComplete="off" min="8" max="30" placeholder=" Password"></input>
 							</form>
 							<div className="buttons-login">
-							<span className="mdpOublier"> <Link  className="mdpOublier1" to="/Signin">Mot de passe oublié ?</Link></span>
+							<span className="mdpOublier"> <Link  className="mdpOublier1" to="/Forgot_password">Mot de passe oublié ?</Link></span>
 									<Link  className="login" to="/login"><button className="buttonLog">CONNEXION</button></Link>
 									<div className="buttons-sign">
 										<span className="sign">Pas encore membre ? <Link  className="sign-in" to="/Signin">Inscrivez-vous gratuitement !</Link></span>
